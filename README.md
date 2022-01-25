@@ -16,8 +16,11 @@ The db must have two models: user and order.
   - an array of the pizzas being ordered. Each pizza should have the following keys:
     - [ ] base (either thick or thin)
     - [ ] toppings (either pepperoni, cheese, peppers or ham)
-    - [ ] quantity (max limit is 100)
+    - [ ] quantity (min limit is 1, max limit is 100)
+      - [ ] if the minimum limit is not met, the following error message should be returned: "You must order atleast one pizza"
   - [ ] notes (max length 200)
+
+All fields are required.
 
 Apart from creating the models, the owner would also like you to write logic for saving an order to the db as well as retrieving orders from the db.
 
