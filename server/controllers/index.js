@@ -2,17 +2,22 @@ const Order = require("../models/order");
 const User = require("../models/user");
 
 const saveOrder = async (req, res) => {
-  const { email } = req.body;
+  try {
+    const { email } = req.body;
 
-  const user = await User.create({ email });
+    // NOTES: first create the user so that you can obtain their id to save on the order model
+    const user = await User.create({ email });
 
-  const order = await Order.create({
-    user: user._id,
-    pizza: req.body.pizza,
-    notes: req.body.notes,
-  });
+    const order = await Order.create({
+      user: user._id,
+      pizza: req.body.pizza,
+      notes: req.body.notes,
+    });
 
-  return res.status(200).json(order);
+    return res.status(200).json(order);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
 };
 
 const getOrder = async (req, res) => {

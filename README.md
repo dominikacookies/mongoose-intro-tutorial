@@ -3,9 +3,10 @@
 ## Concepts covered
 
 - [ ] Creation of models and schemas using Mongoose
-  - [ ] implementaion of built in and custom validators
+  - [ ] implementation of built in and custom validators
   - [ ] referencing keys on other models
   - [ ] setting unique, default and enum properties
+  - [ ] setting custom messages if validation requirements are not met
 - [ ] Retrieval of documents from collections
   - [ ] population of referenced models
 - [ ] Creation of new documents
@@ -14,9 +15,9 @@
 
 ## Description
 
-This repo contains code for a beginners workshop, introducing Mongo DB and mongoose. The full solution is available on the main branch, whereas the starter code and task description can be obtained from the dev branch.
+This repo contains code for a beginners workshop introducing Mongo DB and mongoose. The full solution is available on the main branch, whereas the starter code and task description can be obtained from the 'unsolved-task' branch.
 
-You can find descriptions of code snippets by searching the repo for 'NOTES'.
+You can find pointers and explanations of code snippets by searching the repo for 'NOTES'.
 
 ## Useful Links
 
