@@ -1,0 +1,11 @@
+{
+  "email": "email@email.com",
+  "pizza": [
+    {
+      "base": "thin",
+      "toppings": ["pepperoni", "cheese"],
+      "quantity": 2
+    }
+  ],
+  "notes": "deliver asap pls"
+}
