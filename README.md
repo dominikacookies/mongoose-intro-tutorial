@@ -1,22 +1,25 @@
 # Mongoose Intro Tutorial
 
-## Concepts covered
+## Task
 
-- [ ] Creation of models and schemas using Mongoose
-  - [ ] implementaion of built in and custom validators
-  - [ ] referencing keys on other models
-  - [ ] setting unique, default and enum properties
-- [ ] Retrieval of documents from collections
-  - [ ] population of referenced models
-- [ ] Creation of new documents
+A pizza shop owner wants to create a database where he can save and retrieve customer and order information. Here are his exact requirements:
 
-<br>
+The db must have two models: user and order.
 
-## Description
+- [ ] the user model should store the user's email address
+  - [ ] the email address should be converted to lowercase before being saved to the db
+  - [ ] an email address should only be saved if it follows the typical email format
+- the order model should have the following fields:
+  - [ ] a reference to the user id of the user who has made the order
+  - [ ] the date the order was made
+    - [ ] this should have a default value of the date when the order is saved to the db
+  - an array of the pizzas being ordered. Each pizza should have the following keys:
+    - [ ] base (either thick or thin)
+    - [ ] toppings (either pepperoni, cheese, peppers or ham)
+    - [ ] quantity (max limit is 100)
+  - [ ] notes (max length 200)
 
-This repo contains code for a beginners workshop, introducing Mongo DB and mongoose. The full solution is available on the main branch, whereas the starter code and task description can be obtained from the dev branch.
-
-You can find descriptions of code snippets by searching the repo for 'NOTES'.
+Apart from creating the models, the owner would also like you to write logic for saving an order to the db as well as retrieving orders from the db.
 
 ## Useful Links
 
