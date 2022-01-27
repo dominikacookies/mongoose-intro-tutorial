@@ -6,7 +6,7 @@ A pizza shop owner wants to create a database where he can save and retrieve cus
 
 The db must have two models: user and order.
 
-- [ ] the user model should store the user's email address
+- the user model should store the user's email address
   - [ ] the email address should be converted to lowercase before being saved to the db
   - [ ] an email address should only be saved if it follows the typical email format
 - the order model should have the following fields:
