@@ -22,7 +22,7 @@ The db must have two models: user and order.
 
 All fields are required.
 
-Apart from creating the models, the owner would also like you to write logic for saving an order to the db as well as retrieving orders from the db.
+Apart from creating the models, the owner would also like you to write logic for saving an order to the db, updating an order in the db with additional pizzas as well as retrieving orders from the db.
 
 ## Useful Links
 
