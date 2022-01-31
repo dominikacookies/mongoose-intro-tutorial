@@ -33,7 +33,23 @@ const getOrder = async (req, res) => {
   }
 };
 
+const addPizzaToOrder = async (req, res) => {
+  try {
+    await Order.findOneAndUpdate(
+      { _id: req.params.id },
+      {
+        $push: { pizza: req.body },
+      }
+    );
+
+    return res.status(200).json("Successfully updated order.");
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+};
+
 module.exports = {
   saveOrder,
   getOrder,
+  addPizzaToOrder,
 };
