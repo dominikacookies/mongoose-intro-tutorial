@@ -7,8 +7,11 @@ const saveOrder = async (req, res) => {};
 
 const getOrder = async (req, res) => {};
 
+const getOrderWithPizzaCount = async (req, res) => {};
+
 module.exports = {
   addPizzaToOrder,
   saveOrder,
   getOrder,
+  getOrderWithPizzaCount,
 };
