@@ -1,9 +1,15 @@
 const { Router } = require("express");
-const { saveOrder, getOrder, addPizzaToOrder } = require("../controllers");
+const {
+  saveOrder,
+  getOrder,
+  addPizzaToOrder,
+  getOrderWithPizzaCount,
+} = require("../controllers");
 
 const router = Router();
 
 router.put("/order/:id", addPizzaToOrder);
+router.get("/order/:id", getOrderWithPizzaCount);
 router.post("/order", saveOrder);
 router.get("/order", getOrder);
 

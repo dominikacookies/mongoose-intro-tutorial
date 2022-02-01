@@ -48,8 +48,27 @@ const addPizzaToOrder = async (req, res) => {
   }
 };
 
+const getOrderWithPizzaCount = async (req, res) => {
+  try {
+    const orderWithPizzaCount = await Order.aggregate([
+      {
+        $addFields: {
+          totalPizzas: {
+            $sum: "$pizza.quantity",
+          },
+        },
+      },
+    ]);
+
+    res.status(200).json(orderWithPizzaCount);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+};
+
 module.exports = {
   saveOrder,
   getOrder,
   addPizzaToOrder,
+  getOrderWithPizzaCount,
 };
