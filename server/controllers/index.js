@@ -48,7 +48,7 @@ const addPizzaToOrder = async (req, res) => {
   }
 };
 
-const getOrderWithPizzaCount = async (req, res) => {
+const getOrdersWithPizzaCount = async (req, res) => {
   try {
     const orderWithPizzaCount = await Order.aggregate([
       {
@@ -70,5 +70,5 @@ module.exports = {
   saveOrder,
   getOrder,
   addPizzaToOrder,
-  getOrderWithPizzaCount,
+  getOrdersWithPizzaCount,
 };

@@ -1,4 +1,4 @@
-# Mongoose Intro Tutorial
+# Mongoose Intermediate Tutorial
 
 ## Concepts covered
 
@@ -10,6 +10,8 @@
 - [ ] Retrieval of documents from collections
   - [ ] population of referenced models
 - [ ] Creation of new documents
+- [ ] Aggregation of data from the database
+- [ ] Pushing data to an array in an existing document
 
 <br>
 

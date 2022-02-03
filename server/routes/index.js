@@ -3,13 +3,13 @@ const {
   saveOrder,
   getOrder,
   addPizzaToOrder,
-  getOrderWithPizzaCount,
+  getOrdersWithPizzaCount,
 } = require("../controllers");
 
 const router = Router();
 
 router.put("/order/:id", addPizzaToOrder);
-router.get("/order/:id", getOrderWithPizzaCount);
+router.get("/order/quantity", getOrdersWithPizzaCount);
 router.post("/order", saveOrder);
 router.get("/order", getOrder);
 
