@@ -27,7 +27,7 @@ Apart from creating the models, the owner would also like you to write logic for
 - [ ] saving an order to the db,
 - [ ] updating an order in the db with additional pizzas
 - [ ] retrieving all orders from the db
-- [ ] retrieving a specific order with an additional field for the total number of pizzas in the order
+- [ ] retrieving all orders specific with an additional field for the total number of pizzas in the order
 
 ## Useful Links
 

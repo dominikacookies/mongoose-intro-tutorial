@@ -9,7 +9,7 @@ const {
 const router = Router();
 
 router.put("/order/:id", addPizzaToOrder);
-router.get("/order/:id", getOrderWithPizzaCount);
+router.get("/order/quantity", getOrderWithPizzaCount);
 router.post("/order", saveOrder);
 router.get("/order", getOrder);
 
