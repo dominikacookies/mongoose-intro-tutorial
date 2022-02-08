@@ -11,13 +11,13 @@
   - [ ] population of referenced models
 - [ ] Creation of new documents
 - [ ] Aggregation of data from the database
-- [ ] Pushing data to an array in an existing document
+- [ ] Pushing additional data to an array field in an existing document
 
 <br>
 
 ## Description
 
-This repo contains code for a beginners workshop introducing Mongo DB and mongoose. The full solution is available on the main branch, whereas the starter code and task description can be obtained from the 'unsolved-task' branch.
+This repo contains code for an intermediate workshop introducing Mongo DB and mongoose. The full solution is available on the main branch, whereas the starter code and task description can be obtained from the 'unsolved-task' branch.
 
 You can find pointers and explanations of code snippets by searching the repo for 'NOTES'.
 
